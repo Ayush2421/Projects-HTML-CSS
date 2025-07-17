@@ -1,0 +1,47 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --universe-color: rgb(5, 45, 67);
+}
+body{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.universe{
+    width:70vw;
+    aspect-ratio:1;
+    background-color: var(--universe-color);
+    border-radius: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.moon{
+    width:25vw;
+    aspect-ratio:1;
+    background-color: rgb(246, 245, 244);
+    /* box-shadow: -10px -3px 10px rgb(238, 238, 238); */
+    box-shadow: inset 10px 0px 10px rgb(115 106 106);
+    border-radius:50%;
+    position: relative;
+    /* overflow: hidden; */
+}
+.moon:before{
+    content:"";
+    position: absolute;
+    top: 15PX;
+    left: 50PX;
+    width: 25vw;
+    aspect-ratio:1;
+    background-color: var(--universe-color);
+    border-radius:50%;
+}
